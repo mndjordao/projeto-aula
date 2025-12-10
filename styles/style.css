@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s, color 0.5s; /* Animação suave na troca de tema */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Estilo do relógio */
+#relogio {
+    font-size: 8em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo da data (extra) */
+#data {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+/* Estilo do botão */
+#toggle-theme {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 5px;
+    background: none;
+    transition: all 0.3s;
+}
+
+/* MODO CLARO (PADRÃO) */
+.light-mode {
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    color: #333; /* Texto escuro */
+}
+
+.light-mode #toggle-theme {
+    color: #333;
+    border-color: #333;
+}
+
+.light-mode #toggle-theme:hover {
+    background-color: #ddd;
+}
+
+
+/* MODO ESCURO */ 
+.dark-mode {
+    background-color: #1a1a2e; 
+    color: #e0e0e0; 
+}
+
+.dark-mode #toggle-theme {
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+.dark-mode #toggle-theme:hover {
+    background-color: #2c2c4a;
+}
